@@ -1,0 +1,55 @@
+.aboutContainer{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+#About{
+    margin: 50px;
+}
+.aboutContainer .aboutme img{
+    height: 22rem;
+    padding: 10px;
+   margin-top: 70px;
+    width: 40rem;
+    border-radius: 5rem;
+
+}
+#About h4, h1{
+text-align: center;
+}
+.para{
+    color: white;
+}
+#About h4{
+    margin: 10px;
+}
+#About h1{
+    font-size: 3rem;
+}
+.para{  
+    margin: 25px;
+    padding: 50px;
+}
+.Skills{
+    margin: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .aboutContainer .aboutme img{
+        object-fit: cover;
+        width: 25rem;
+    }
+    .para{
+        position: relative;
+        top: 25rem; right: 3rem;
+        margin: -40px;
+    }
+}
+@media screen and (max-width: 350px){
+    .aboutContainer .aboutme img{
+        object-fit: cover;
+        width:10rem;
+    }
+    
+
+}

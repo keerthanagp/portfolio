@@ -1,0 +1,87 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+    text-align: center;
+    margin: 25px;
+    
+}
+.header-social{
+    text-align: center;
+    height: 100%;
+}
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+}
+.header-social{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1;
+position: absolute;
+left: 0;right: 50rem;top: 25rem;
+}
+.header-social::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background-color:rgb(39, 121, 243);
+}
+.scrolldown{
+    position: absolute;
+    right: 0; bottom: 10rem;
+    transform: rotate(90deg);
+    font-size: 0.9rem;
+    color: white;
+}
+.box{
+    animation: animName 2s linear infinite;
+  width:50px;
+  height:5px;
+  background:#80ffdb;
+  margin:20px;
+}
+.box-square{
+  animation: animName 2s linear infinite;
+  width:50px;
+  height:50px;
+  border-radius: 20%;
+  background:#80ffdb;
+  margin:20px;
+}
+
+.square-colors{
+    width: 20px;
+  height: 20px;
+  background-color: #80ffdb;
+  animation-name: example;
+  animation-duration: 5s;
+  margin-left: 80rem;
+  border-radius: 20%;
+}
+@keyframes example {
+    0%   {background-color: #ffddd2;}
+    25%  {background-color: #02c39a;}
+    50%  {background-color: #72efdd;}
+    100% {background-color: #d6ccc2;}
+  }
+@keyframes animName {
+    0%{
+       transform: rotate(0deg);
+      }
+   100%{
+       transform: rotate(360deg);
+      }
+   }
+   
+
+/* Media query */
+
+@media screen and (max-width: 600px){
+    a{
+        display: none;
+    }
+}

@@ -1,0 +1,60 @@
+#Contact h2{
+    text-align: center;
+    margin: 20px;
+}
+.contactcontainer{
+    text-align: center;   
+}
+#Contact{
+    margin: 8rem;
+}
+.contactoption{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #3F979B;
+    width: 25%;
+    border-radius: 0.5rem;
+    margin-left: 30px;
+    margin: left auto;
+    height: 50%;
+    margin-top: 30px;   
+    color: black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+    left: 50rem; bottom: 25rem;
+}
+form input,textarea{
+    font-size: 1.2rem;
+    padding: 10px;
+    gap: 1.2rem;
+    margin: 10px;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 2px solid #3F979B;
+    color: white;
+}
+form button{
+    margin: auto ;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:600px){
+    #Contact {
+        margin-top: 80rem;
+    }
+    .contactoption{
+        width: 50%;
+        margin: 0 auto;
+       margin-top: 50px;
+    }
+    form{
+        position: relative;
+         left: 10rem; bottom: auto;
+         margin-top: 20px;
+    }
+}
